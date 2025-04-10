@@ -2,7 +2,7 @@ const sumAll = function(startNum, endNum) {
     let sum = 0;
     let counter = 0;
 
-    if(startNum < 0 || endNum < 0) {
+    if(startNum < 0 || endNum < 0 || typeof startNum !== 'number' || typeof endNum !== 'number' || !Number.isInteger(startNum) || !Number.isInteger(endNum)) {
         return 'ERROR';
     } else if(startNum < endNum) {
         counter = startNum;
